@@ -1,6 +1,6 @@
 const CACHE_VERSION = '0.4';
 const urlsToCache = [
-    '/',
+    '/PWA',
     'index.html',
     'dist/app.min.js',
     'src/media/Cannon-sound-effect.mp3',
