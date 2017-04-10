@@ -1,0 +1,25 @@
+{
+  "short_name": "Sound effect",
+  "name": "Simple button to play sound effect",
+  "icons": [
+    {
+      "src": "src/media/sound48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "src/media/sound96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "src/media/sound192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "background_color": "#000",
+  "start_url": "index.html?launcher=true"
+}

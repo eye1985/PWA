@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sound effect</title>
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Sound effect">
+        <meta name="apple-mobile-web-app-title" content="Sound effect">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-starturl" content="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" href="/src/style.css">
+    </head>
+    <body>
+        <button type="button">
+            Bang!
+        </button>
+
+        <audio>
+          <source src="src/media/Cannon-sound-effect.mp3" type="audio/mp3">
+              Your browser does not support the audio element.
+        </audio>
+
+        <script src="dist/app.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+                var audio = document.querySelector('audio');
+                var button = document.querySelector('button');
+
+                button.addEventListener('click',function(){
+                    button.setAttribute('disabled','disabled');
+                    audio.play();
+                });
+
+                audio.addEventListener('ended',function(){
+                    button.removeAttribute('disabled');
+                });
+            });
+        </script>
+    </body>
+</html>

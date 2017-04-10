@@ -1,0 +1,19 @@
+{
+  "name": "SoundEffect",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.3.2",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
+    },
+
+  "scripts": {
+    "start":"webpack-dev-server --hot --inline --progress",
+    "build:dev":"webpack -d",
+    "build:prod":"webpack -p"
+  }
+}
