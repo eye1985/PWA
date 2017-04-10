@@ -1,4 +1,4 @@
-const CACHE_VERSION = '0.5';
+const CACHE_VERSION = '0.4';
 const urlsToCache = [
     '/',
     'index.html',
